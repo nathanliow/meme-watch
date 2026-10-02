@@ -1,0 +1,55 @@
+{
+  "name": "meme-watch",
+  "version": "0.2.1",
+  "description": "Live USD PnL for the top 5 memecoin positions in a Solana wallet, plus a live chart terminal for any token. Helius only.",
+  "author": {
+    "name": "Nathan Liow",
+    "url": "https://github.com/nathanliow"
+  },
+  "license": "MIT",
+  "keywords": [
+    "solana",
+    "memecoin",
+    "pnl",
+    "portfolio",
+    "chart",
+    "laserstream",
+    "helius"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "heliusApiKey": {
+      "type": "string",
+      "title": "Helius API key",
+      "description": "From dashboard.helius.dev. Falls back to the HELIUS_API_KEY environment variable.",
+      "sensitive": true,
+      "required": false
+    },
+    "priceSeconds": {
+      "type": "number",
+      "title": "Price refresh (seconds)",
+      "description": "How often position prices refresh. Each refresh costs 10 Helius credits per position.",
+      "default": 60,
+      "min": 15
+    },
+    "region": {
+      "type": "string",
+      "title": "LaserStream region",
+      "description": "The LaserStream endpoint nearest you, for the chart's live trades.",
+      "options": [
+        "ewr",
+        "pitt",
+        "slc",
+        "lax",
+        "lon",
+        "ams",
+        "fra",
+        "tyo",
+        "sgp"
+      ],
+      "default": "ewr"
+    }
+  },
+  "homepage": "https://github.com/nathanliow/meme-watch",
+  "repository": "https://github.com/nathanliow/meme-watch"
+}

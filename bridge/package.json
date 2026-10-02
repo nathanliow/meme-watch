@@ -1,0 +1,9 @@
+{
+  "name": "meme-watch-bridge",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "bs58": "6.0.0",
+    "helius-laserstream": "0.11.0"
+  }
+}

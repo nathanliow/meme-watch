@@ -1,0 +1,17 @@
+{
+  "name": "meme-watch",
+  "description": "Solana memecoin PnL and live token charts inside Claude Code.",
+  "owner": {
+    "name": "Nathan Liow",
+    "url": "https://github.com/nathanliow"
+  },
+  "plugins": [
+    {
+      "name": "meme-watch",
+      "source": "./",
+      "description": "Live USD PnL for the top 5 memecoin positions in a Solana wallet, plus a live chart terminal for any token. Helius only.",
+      "version": "0.2.1",
+      "category": "productivity"
+    }
+  ]
+}
